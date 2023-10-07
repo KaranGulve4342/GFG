@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "GFG-WebApp",
+			"path": "../../GFG-WebApp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

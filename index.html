@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="gfg_logo.jpg" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <h2><span id="element"> </span> </h2>
+          <p>
+            It roasts, markets, and retails specialty coffee. The company,
+            through its stores, offers several blends of coffee, handcrafted
+            beverages, merchandise, and food items. Starbucks also offers whole
+            bean and ground coffee, readymade drinks, snacks, and other
+            beverages.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imagebox">
+          <img src="coding.png" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="linkedin.png"
+            onclick="imgslider('work3.png');changeBackgroundcolor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="whatsapp.png"
+            onclick="imgslider('i1.png');changeBackgroundcolor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="phone.png"
+            onclick="imgslider('i2.png');changeBackgroundcolor('#d752b1')"
+          />
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="#"><img src="facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      function imgslider(image) {
+        document.querySelector(".starbucks").src = image;
+      }
+
+      function changeBackgroundcolor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hello Geeks!'],
+            typeSpeed: 50,
+        });
+    </script>
+  </body>
+</html>
